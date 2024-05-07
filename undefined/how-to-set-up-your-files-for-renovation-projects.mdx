@@ -1,0 +1,64 @@
+---
+author: Alex Altieri
+description: See how to set up classes and layers for phased construction and demolition plans for a renovation project in Vectorworks Architect.
+keywords: undefined
+title: See how to set up classes and layers for phased construction and demolition plans for a renovation project in Vectorworks Architect. 
+datePublished: 2022-04-07T18:26:41.000Z
+---
+  
+
+# Class & Layer Setup for Renovation Projects
+
+ Posted by [Alex Altieri](https://blog.vectorworks.net/author/alex-altieri) | 4 min read time 
+
+![](https://blog.vectorworks.net/hubfs/Blog%20Images/2022%20PVW%20Images/04_Renovation%20Projects/blog-1440x800%20copy%204.png) 
+
+* [![Share on LinkedIn](https://2659751.fs1.hubspotusercontent-na1.net/hubfs/2659751/michaelDemo/share-LI.png)](http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog.vectorworks.net%2Fhow-to-set-up-your-files-for-renovation-projects)
+* [![Share on Twitter](https://2659751.fs1.hubspotusercontent-na1.net/hubfs/2659751/michaelDemo/share-TW.png)](https://www.twitter.com/share?text=Class%20&%20Layer%20Setup%20for%20Renovation%20Projects&url=https%3A%2F%2Fblog.vectorworks.net%2Fhow-to-set-up-your-files-for-renovation-projects&via=PMGTweets)
+* [![Share on FaceBook](https://2659751.fs1.hubspotusercontent-na1.net/hubfs/2659751/michaelDemo/share-FB.png)](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.vectorworks.net%2Fhow-to-set-up-your-files-for-renovation-projects)
+
+Modeling and documenting renovation projects differs from new building projects in some key ways.
+
+Since there’s often three distinct phases in a renovation project, you’ll want to visually represent each of them. With Vectorworks Architect, you can visually represent the status of existing, demolition, and new construction with attributes such as line color, line type, fill color, and/or hatches.
+
+There are multiple approaches you could take to managing the visual representation of renovation plans. In this blog, we'll highlight a method based on Vectorworks design layers and classes.
+
+## Setting Up Classes
+
+If you’d normally have one class for walls, in a renovation project you’d have three classes for walls — Wall-Demo, Wall-New, and Wall-Existing. Each class has its own attributes, and their visibility will be controlled in a viewport.
+
+![Screen Shot 2022-03-03 at 3.34.29 PM](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/2022%20PVW%20Images/04_Renovation%20Projects/Screen%20Shot%202022-03-03%20at%203.34.29%20PM.png?width=600&name=Screen%20Shot%202022-03-03%20at%203.34.29%20PM.png)
+
+Vectorworks has the flexibility to customize naming conventions to meet AIA, Omniclass, Uniclass, or other CAD/BIM standards. The class naming system above is simplified for the purposes of demonstration.
+
+Organizing the file into classes like this will allow you to use class overrides in viewports to graphically represent various objects at different phases of the project. For example, the first image shows a viewport with no class overrides and the second shows the same viewport with orange lines and fills representing items to be demolished, and with black-filled walls as existing items that will remain.
+
+![Screen Shot 2022-03-03 at 3.46.48 PM](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/2022%20PVW%20Images/04_Renovation%20Projects/Screen%20Shot%202022-03-03%20at%203.46.48%20PM.png?width=506&name=Screen%20Shot%202022-03-03%20at%203.46.48%20PM.png)
+
+![Screen Shot 2022-03-03 at 3.47.53 PM](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/2022%20PVW%20Images/04_Renovation%20Projects/Screen%20Shot%202022-03-03%20at%203.47.53%20PM.png?width=500&name=Screen%20Shot%202022-03-03%20at%203.47.53%20PM.png)
+
+## Setting Up Design Layers
+
+Design layers in Vectorworks are commonly used to organize your file by zones, types, or levels. Design layers are necessary to control the visibility of the model for generating floor plans, elevations, sections, and 2D details.
+
+For a renovation project with two construction phases, you’ll want one layer per phase. Creating and using design layers like this allows you to visualize groups of objects by color so you can directly see which objects are existing, new, or scheduled to be demolished.
+
+![Screen Shot 2022-03-30 at 3.23.29 PM](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/2022%20PVW%20Images/04_Renovation%20Projects/Screen%20Shot%202022-03-30%20at%203.23.29%20PM.png?width=600&name=Screen%20Shot%202022-03-30%20at%203.23.29%20PM.png)
+
+## Optimizing File Setup
+
+There can be many variables in project types and markets, so it’s important for you and your firm to customize how you organize classes and design layers to suit your needs. Many firms will use a combination of classes and design layers to meet their specific workflow requirements.
+
+The following chart is an example of how class and layer structure for floors might differ between a new construction project and a renovation project.
+
+![Screen Shot 2022-03-30 at 3.24.02 PM](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/2022%20PVW%20Images/04_Renovation%20Projects/Screen%20Shot%202022-03-30%20at%203.24.02%20PM.png?width=600&name=Screen%20Shot%202022-03-30%20at%203.24.02%20PM.png)
+
+In this example, classes for walls, doors, and windows are duplicated and there’s a general demolition class. The reason for this is that door and window objects are inserted into wall objects, and because of this behavior you must classify them separately to obtain the correct visibilities when setting up your demolition and construction plans: for example, when an existing window is being replaced and inserted into an existing wall, you will need two windows, one to represent the demolished window and one to represent the new window. These two objects, if inserted in the same existing wall, need to be controlled by a different class to set the proper visibilities for demolition and new construction floor plans.
+
+For more information and example files to follow along with the process, check out the “Model Setup for Renovation Projects” course on Vectorworks University:
+
+[![Learn More About Setting Up Files for Renovation Projects](https://no-cache.hubspot.com/cta/default/3018241/50c9b4a8-6e6b-400a-beb6-e6e26d87326a.png)](https://cta-redirect.hubspot.com/cta/redirect/3018241/50c9b4a8-6e6b-400a-beb6-e6e26d87326a) 
+
+ Topics: [Buildings](https://blog.vectorworks.net/topic/buildings) 
+
+  

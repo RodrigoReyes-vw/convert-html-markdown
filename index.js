@@ -1,5 +1,7 @@
 //import { NodeHtmlMarkdown, NodeHtmlMarkdownOptions } from 'node-html-markdown'
 const { NodeHtmlMarkdown } = require("node-html-markdown");
+const cheerio = require("cheerio");
+
 const glob = require("glob");
 const { promisify } = require("util");
 const fs = require("fs");
@@ -9,12 +11,34 @@ const readFileAsync = promisify(fs.readFile);
 const writeFileAsync = promisify(fs.writeFile);
 
 const nhm = new NodeHtmlMarkdown(
-  /* options (optional) */ {},
+  /* options (optional) */ {
+    ignore: [
+      "head",
+      ".header-container-wrapper",
+      "footer-container-wrapper",
+      `"role="menu"`,
+    ],
+  },
   /* customTransformers (optional) */ undefined,
   /* customCodeBlockTranslators (optional) */ undefined
 );
 
-const fileDirectory = "PATH TO YOU FOLDER with name ConfluencePages";
+const getMeta = (content) => {
+  const $ = cheerio.load(content);
+  const regex =
+    /"datePublished" : "(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z)"/;
+  const datePublished = regex.exec(content)[1];
+  const metaData = `---
+author: ${$('meta[name="author"]').attr("content")}
+description: ${$('meta[name="description"]').attr("content")}
+keywords: ${$('meta[name="keywords"]').attr("content")}
+title: ${$('meta[property="og:description"]').attr("content")} 
+datePublished: ${datePublished}
+---`;
+  return metaData;
+};
+
+const fileDirectory = "./blog";
 (async () => {
   try {
     const getDirectories = function (src, ext) {
@@ -25,22 +49,22 @@ const fileDirectory = "PATH TO YOU FOLDER with name ConfluencePages";
 
     for (const iterator of allFiles) {
       const data = await readFileAsync(iterator, "utf8");
-      console.log("🚀 ~ file: index.js:28 ~ iterator:", iterator)
-      const content = nhm.translate(data);
-      const localPath = iterator.replace(
-        "ConfluencePages",
-        "ConfluencePagesMD"
-      );
+      console.log("🚀 ~ file: index.js:28 ~ iterator:", iterator);
+
+      const content = `${getMeta(data)}
+${nhm.translate(data)}`;
+
+      const localPath = iterator.replace("blog");
 
       const dirPath = localPath.split("/");
       dirPath.pop();
 
-      fsExtra.ensureDir(dirPath.join("/"), (err) => {
-        console.log("fsExtra.ensureDir ~ err:", err)
+      fsExtra.ensureDir(dirPath.join("/md"), (err) => {
+        console.log("fsExtra.ensureDir ~ err:", err);
       });
-      
+
       writeFileAsync(
-        `${localPath.substring(0, localPath.length - 5)}.md`,
+        `${localPath.substring(0, localPath.length - 5)}.mdx`,
         content,
         (err) => {
           if (err) {

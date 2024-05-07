@@ -1,0 +1,44 @@
+---
+author: Alex Altieri
+description: Transform an image into a triangulated design with this Marionette script.
+keywords: undefined
+title: Transform an image into a triangulated design with this Marionette script. 
+datePublished: 2020-09-28T18:59:00.000Z
+---
+  
+
+# Image-based Triangulated Panels with Marionette
+
+ Posted by [Alex Altieri](https://blog.vectorworks.net/author/alex-altieri) | 3 min read time 
+
+![](https://blog.vectorworks.net/hubfs/Blog%20Images/200928_%20Marionette%20Monday/blog-images-resize-09-28.jpg) 
+
+* [![Share on LinkedIn](https://2659751.fs1.hubspotusercontent-na1.net/hubfs/2659751/michaelDemo/share-LI.png)](http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog.vectorworks.net%2Fimage-based-triangulated-panels-with-marionette)
+* [![Share on Twitter](https://2659751.fs1.hubspotusercontent-na1.net/hubfs/2659751/michaelDemo/share-TW.png)](https://www.twitter.com/share?text=Image-based%20Triangulated%20Panels%20with%20Marionette&url=https%3A%2F%2Fblog.vectorworks.net%2Fimage-based-triangulated-panels-with-marionette&via=PMGTweets)
+* [![Share on FaceBook](https://2659751.fs1.hubspotusercontent-na1.net/hubfs/2659751/michaelDemo/share-FB.png)](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.vectorworks.net%2Fimage-based-triangulated-panels-with-marionette)
+
+We’re back with another [Marionette Monday](//blog.vectorworks.net/topic/marionettemonday)!
+
+In the past, we’ve shared a lot of custom scripts and networks that do a whole lot of different things (this gravity [retaining wall design](../../../net/vectorworks/blog/marionette-monday-what-is-a-gravity-wall.html), this [2D to massing model automation](../../../net/vectorworks/blog/custom-script-2d-polygons-to-massing-model.html), and this [building story automation](../../../net/vectorworks/blog/marionette-monday-save-time-on-stories-levels-and-layers.html) to name a few!) This time, we have a script that generates some unique geometry patterns. This network transforms an image into a triangulated panel by reading the image’s data for each pixel, then averaging colors per triangle.
+
+![Screen Shot 2020-09-22 at 2.31.23 PM](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/200928_%20Marionette%20Monday/Screen%20Shot%202020-09-22%20at%202.31.23%20PM.png?width=600&name=Screen%20Shot%202020-09-22%20at%202.31.23%20PM.png)
+
+Customize the number of points in the panel to add your own artistic flair, like in the image above — the panels contain 250 points, 100 points, and 30 points (left to right), and each way offers a unique look and feel. You can use this network to decorate an interior with customized art, to create a stained glass window, or to simply see what your favorite image looks like in triangulation.
+
+This script combines and expands upon an [image processing node](https://forum.vectorworks.net/index.php?/files/file/61-image-processing/?utm%5Fcampaign=blog&utm%5Fmedium=planetvectorworks&utm%5Fsource=intext&utm%5Fcontent=092820marionettemonday) and a [triangulation node](https://forum.vectorworks.net/index.php?/files/file/10-marionette-triangulation/?utm%5Fcampaign=blog&utm%5Fmedium=planetvectorworks&utm%5Fsource=intext&utm%5Fcontent=092820marionettemonday) from our [Community Forum](https://forum.vectorworks.net/index.php?/files/?utm%5Fcampaign=blog&utm%5Fmedium=planetvectorworks&utm%5Fsource=intext&utm%5Fcontent=092820marionettemonday), where you can find plenty of other Marionette objects and scripts.
+
+![Screen Shot 2020-09-22 at 2.33.39 PM](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/200928_%20Marionette%20Monday/Screen%20Shot%202020-09-22%20at%202.33.39%20PM.png?width=600&name=Screen%20Shot%202020-09-22%20at%202.33.39%20PM.png)
+
+You'll need the Python libraries “Pillow,” “NumPy,” and “SciPy” to be installed on your computer to run the script. You’ll see a pop-up to install them when you modify any objects that use the script. You only need to install them the first time you run the script, and after that it’ll work automatically.
+
+[![GET THE FILE](https://no-cache.hubspot.com/cta/default/3018241/8df97d9a-7c94-4f29-84c7-6200c5e7d1f9.png)](https://cta-redirect.hubspot.com/cta/redirect/3018241/8df97d9a-7c94-4f29-84c7-6200c5e7d1f9) 
+
+Exceptional design demands exceptional tools and platforms built to deliver absolute creative expression and maximum efficiency. At Vectorworks, we believe your design software should offer the freedom to follow your imagination wherever it may lead. See for yourself with a free 30-day trial of Vectorworks. [Click here](https://www.vectorworks.net/trial/form) for more information.
+
+If you're still in school or a recent graduate and are looking for that all-in-one solution, check out Vectorworks' academic programs and see how you can get free or discounted software. [Click here](https://www.vectorworks.net/en-US/education) for more information.
+
+Make the most of your software experience with [Vectorworks University](https://university.vectorworks.net/). Take classes online, sign up for one of our webinars, or schedule a training session. Beginners and experienced designers alike will gain new skills, fine-tune workflows, and dive into all you can do with Vectorworks. 
+
+ Topics: [Tech Tips and Workflows](https://blog.vectorworks.net/topic/tech-tips-and-workflows) 
+
+  

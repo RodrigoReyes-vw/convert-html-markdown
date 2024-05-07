@@ -1,0 +1,128 @@
+---
+author: Carter Hartong
+description: Learn how to use Vectorworks’ data-efficient features for a flexible, yet controlled, BIM workflow.
+keywords: undefined
+title: Learn how to use Vectorworks’ data-efficient features for a flexible, yet controlled, BIM workflow. 
+datePublished: 2023-03-16T18:34:52.000Z
+---
+  
+
+# The Data Difference | 3 Ways to Maximize Your Data Use for BIM
+
+ Posted by [Carter Hartong](https://blog.vectorworks.net/author/carter-hartong) | 8 min read time 
+
+![](https://blog.vectorworks.net/hubfs/Blog%20Images/230308_Data%20Difference%20Blog%201/blog-1440x800_Data%20Difference%20Featured%20Image.png) 
+
+* [![Share on LinkedIn](https://2659751.fs1.hubspotusercontent-na1.net/hubfs/2659751/michaelDemo/share-LI.png)](http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fblog.vectorworks.net%2F3-ways-to-maximize-data-for-bim-vectorworks)
+* [![Share on Twitter](https://2659751.fs1.hubspotusercontent-na1.net/hubfs/2659751/michaelDemo/share-TW.png)](https://www.twitter.com/share?text=The%20Data%20Difference%20|%203%20Ways%20to%20Maximize%20Your%20Data%20Use%20for%20BIM&url=https%3A%2F%2Fblog.vectorworks.net%2F3-ways-to-maximize-data-for-bim-vectorworks&via=PMGTweets)
+* [![Share on FaceBook](https://2659751.fs1.hubspotusercontent-na1.net/hubfs/2659751/michaelDemo/share-FB.png)](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.vectorworks.net%2F3-ways-to-maximize-data-for-bim-vectorworks)
+
+Whether you’re already using a BIM process or your firm is just starting, you need software that can help you deliver an effective geometry model _and_ information model. 
+
+The right tools can help you develop your informational model with automated yet flexible initial data input, efficient data management, and accurate verification of your data.
+
+We call the sum of these capabilities the “data difference,” and it’s a key factor in supercharging your workflow. 
+
+This blog is our first in a series exploring how Vectorworks can help give you the data difference; here, you’ll learn about the “one-click interface,” Data Manager, and dynamic data assignment.
+
+#### Vectorworks’ “One-Click” Data Interface
+
+Your project's important data is only one click away.
+
+In Vectorworks, the [Object Info palette](https://app-help.vectorworks.net/2019/eng/VW2019%5FGuide/Objects%5Fedit1/Editing%5FObjects.htm) (OIP) presents the data associated with your objects. The OIP is your Vectorworks toolkit's most used and most crucial palette. This palette displays both the parametric data automatically attached to your models (for example, 2D objects know their area and perimeter, and 3D objects know their surface area, volume, etc.) and data that you may attach with Record Formats.
+
+![blog-1440x800_Data Difference OIP](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/230308_Data%20Difference%20Blog%201/blog-1440x800_Data%20Difference%20OIP.png?width=1440&height=800&name=blog-1440x800_Data%20Difference%20OIP.png)
+
+And since your data is available in a prominent, easy-to-access place in the interface, you don’t have to waste time trying to find important information like measurements and such. Additionally, this means that you and your collaborators can see the data assigned to your BIM model without having to waste time digging into additional dialogs.
+
+#### The Data Manager
+
+Consider a souped-up sports car. If the OIP in Vectorworks is like the dashboard helping you see data associated with your project, the Data Manager is the engine that pushes your designs forward.
+
+The [Data Manager](https://app-help.vectorworks.net/2023/eng/VW2023%5FGuide/DataManager/Using%5Fthe%5FData%5FManager.htm?rhsearch=data%20manager&rhhlterm=data%20manager%20manage) helps you control how data fields are attached to objects and how data is displayed and entered into your OIP, saving you from spending hours entering data just to find out that much of it is incorrect.
+
+When starting a new project in Vectorworks, you can use the Data Manager to set up the following:
+
+###### Data Sets to Automatically Apply to Objects as They’re Created or Assigned to a Class 
+
+Data for architectural parametric objects are automatically mapped to equivalent IFC fields, but you can also create a class-based mapping system. This means you can place any custom-built objects into a class, and Vectorworks will dynamically add the data for you!
+
+Essentially, this use of the Data Manager increases efficiency when applying data across different groups of classes, objects, and/or symbols.
+
+So, if custom furniture objects are simply placed in a designated class, they’ll automatically be assigned IfcFurnishingElement data. See below:
+
+![Data Difference_1_Class Based](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/230308_Data%20Difference%20Blog%201/Data%20Difference_1_Class%20Based.jpg?width=1440&height=1001&name=Data%20Difference_1_Class%20Based.jpg)
+
+###### Formulas to Customize Data Fields or to Apply Data Fields with Custom Conditions
+
+Customizable fields in the Data Manager adapt to your project’s needs, ensuring data remains relevant no matter what. So, if a door in Vectorworks is exported as an IfcDoor, the IfcDoor data can come from various sources of data in Vectorworks. These sources could be the door object parameters or custom records:
+
+**_IFCDOOR.OVERALLHEIGHT = DOOR HEIGHT_**
+
+The above formula indicates that the value of the door height from Vectorworks’ door object will be exported as the “OverallHeight” value in your IFC file.
+
+**_IFCDOOR.PSET\_DOORCOMMON.FIRERATING = DOOR.ADDITIONAL DOOR DATA.FIRE RATING_**
+
+This second formula indicates that the value of the door fire rating coming from a custom record named “additional door data” can be exported as the fire rating in your IFC file.
+
+The two formulas above are what we call a “mapping.” You can also use the Data Manager to create or change a mapping: 
+
+![Data Difference_2_Define Mapping](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/230308_Data%20Difference%20Blog%201/Data%20Difference_2_Define%20Mapping.jpg?width=1440&height=837&name=Data%20Difference_2_Define%20Mapping.jpg)
+
+###### Custom Views for Data Entry in the OIP
+
+This capability is incredibly helpful if your project needs staffed data input or input by different teams, consultants, or personnel. Custom views for data entry in the OIP can also be combined with the specific levels of information you’ll need at different stages of a project.
+
+For example, Data Sheets can present increasing levels of detail and information as your BIM project progresses through different stages. Check it out:
+
+![Screen Shot 2023-03-16 at 12.41.58 PM](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/230308_Data%20Difference%20Blog%201/Screen%20Shot%202023-03-16%20at%2012.41.58%20PM.png?width=1440&height=518&name=Screen%20Shot%202023-03-16%20at%2012.41.58%20PM.png)
+
+You can also use custom records to add data to wall objects and then set up Data Sheets for different stages of your project, as seen in the two images that follow:
+
+![Data Difference_4_Add Data Set](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/230308_Data%20Difference%20Blog%201/Data%20Difference_4_Add%20Data%20Set.jpg?width=1440&height=754&name=Data%20Difference_4_Add%20Data%20Set.jpg)![Data Difference_5_Data Manager](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/230308_Data%20Difference%20Blog%201/Data%20Difference_5_Data%20Manager.png?width=1440&height=743&name=Data%20Difference_5_Data%20Manager.png)  
+
+As you adapt the information you’re sharing with your BIM model, your IFC model will also update accordingly.
+
+###### Adding Objects to Your File with Data Attached
+
+With a good mapping scheme in place, you can add objects to your file with the required data fields — and even some standard data — already attached. This saves you time and moves your project along smoothly.
+
+And if your project requires proprietary mapping schemes such as COBie, the Data Manager can elegantly and quickly import them, so you won’t lose time storing and loading data mapping sets.
+
+![B Data Manager 01 Door base fields (1)](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/230308_Data%20Difference%20Blog%201/B%20Data%20Manager%2001%20Door%20base%20fields%20(1).png?width=1440&height=801&name=B%20Data%20Manager%2001%20Door%20base%20fields%20(1).png)
+
+[Click here to take a deeper dive into the data manager](https://university.vectorworks.net/course/view.php?id=231).
+
+#### Dynamic Data Assignment
+
+Sticking with the previously used metaphor of the data difference sports car, Vectorworks’ ability to dynamically assign data is the steering wheel, giving you the freedom and flexibility to maneuver the car as needed.
+
+With a flexible IFC data assignment workflow using conditional formulas, you can assign data intelligently depending on the parameter or attribute of the object to which you’re making an assignment. For example, a piece of data might be assigned based on a simple naming or class assignment, or it can be assigned based on specific properties like material or location.
+
+![C Dynamic Assignment 01 Door Name Simple next to other windows](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/230308_Data%20Difference%20Blog%201/C%20Dynamic%20Assignment%2001%20Door%20Name%20Simple%20next%20to%20other%20windows.png?width=1440&height=519&name=C%20Dynamic%20Assignment%2001%20Door%20Name%20Simple%20next%20to%20other%20windows.png)  
+
+Vectorworks provides the most flexible IFC data assignment workflow out of the available BIM authoring software. Most BIM software only provide static data assignment, meaning that IFC Entity types can only be assigned by internal mapping to strict corresponding object types or by mapping after a laborious custom build process.
+
+This kind of IFC data assignment in Vectorworks is particularly beneficial in architecture or landscape architecture, because IFC data assignment can save you time and cut down errors or omissions in your model. This is especially true because — in architecture or landscape architecture —you have to deal with project-specific and non-constrained geometry types, out-of-the-box parametric objects, or predefined objects from a manufacturer. 
+
+Thanks to dynamic data assignment, you can also assign data to objects based on an array of criteria.
+
+For example, you can predetermine whether a slab object needs to be assigned IfcSlab or IfcCovering based on the layer the object’s assigned. You can do this using an IF formula, and the same formula helps you determine whether the same slab is predefined as “FLOOR,” “BASESLAB,” or “CEILING.”
+
+![Data Difference Final Image_BIM Slab](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/230308_Data%20Difference%20Blog%201/Data%20Difference%20Final%20Image_BIM%20Slab.png?width=1440&height=773&name=Data%20Difference%20Final%20Image_BIM%20Slab.png)
+
+As you can see below, an object can be created with the same tool but assigned different data based on the layer it’s located in. This data will automatically change if the layer is changed. Again, this dynamic assignment of data will help you and those your working with keep errors down to a minimum.
+
+![image-combo-1](https://blog.vectorworks.net/hs-fs/hubfs/Blog%20Images/230308_Data%20Difference%20Blog%201/image-combo-1.png?width=1440&height=765&name=image-combo-1.png)
+
+In conclusion, the capabilities and features discussed in this post can all work together to help you and your consultants have a more efficient BIM process. You’ll have more control over the data you export and be able to validate and verify data for each phase of your BIM project.
+
+And that’s what the data difference is all about — more information, more informed design decisions, and more design freedom!
+
+Our second post in this series will explore the power of the Data Visualization feature, but to continue learning in the meantime, click the button below:
+
+[![SHARING YOUR MODEL WITH IFC](https://no-cache.hubspot.com/cta/default/3018241/e6f10cf6-ff32-4f16-9945-82432f01d86f.png)](https://cta-redirect.hubspot.com/cta/redirect/3018241/e6f10cf6-ff32-4f16-9945-82432f01d86f) 
+
+ Topics: [Buildings](https://blog.vectorworks.net/topic/buildings) 
+
+  
